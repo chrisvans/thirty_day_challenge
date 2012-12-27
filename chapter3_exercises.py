@@ -13,12 +13,12 @@
 
 # 3.3
 
-space = ' '
+
 def right_justify(s):
     if s == str(s):
-        print (space * 70 + s)
+        print ' ' * 70 + s
     else:
-        print ('Input must be a string!')
+        print 'Input must be a string!'
         
 right_justify("bagel")
 

@@ -53,20 +53,21 @@ alternate_final
 
 # 3. 7:30.06 am
 
-starting_time = 6 + 52/60
+starting_time = 6 + 52/float(60)
 # in hours
 
-easy_pace = (8 + 15/60) / 60
-tempo = (7 + 12/60) / 60
+easy_pace = (8 + 15/float(60)) / 60
+tempo = (7 + 12/float(60)) / 60
 # in hours
 
 hours = starting_time + easy_pace * 2 + tempo * 3
 hours
 # take the integer away from hours to find the minutes
-minutes = hours - 7
+minutes = hours - int(hours)
 minutes *= 60
 # convert back to time measurement
-seconds = minutes - 30
+seconds = minutes - int(minutes)
 seconds *= 60
 # concatenate for answer
 answer = str(int(hours)) + ':' + str(int(minutes)) + '.' + str(int(seconds))
+answer
