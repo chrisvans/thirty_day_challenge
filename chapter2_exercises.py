@@ -8,11 +8,11 @@
 # print zipcode
 # Results in an error because 9 is > 7, and an 8 (or more) would be 
 # represented by a number in the next place up.
-# Each value in each place represents a binary place number, 
+# Each value in each place represents a octal place number, 
 # multiplied by the number provided.  So in this case, 
 # zipcode = 02132
-# The first 0 denotes that it is a binary number
-# 0001 * 2 + 0010 * 3 + 0100 * 1 + 1000 * 2
+# The first 0 denotes that it is a octal number
+# (0002) 2 * 1 + (0030) 3 * 8 + (0100) 1 * 64 + (2000) 2 * 512
 
 #2.2
 
