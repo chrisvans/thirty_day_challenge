@@ -15,7 +15,7 @@
 
 
 def right_justify(s):
-    print ' ' * 70 + str(s)
+    print ' ' * (70 -len(str(s))) + str(s)
         
 right_justify("bagel")
 
